@@ -11,6 +11,7 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     outDir: "dist/spa",
+    chunkSizeWarningLimit: 1500, // ⬅️ Add this line to increase the warning threshold
   },
   plugins: [react(), expressPlugin()],
   resolve: {
