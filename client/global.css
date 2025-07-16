@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Coders Library Dark Theme
+   * Using the brand color palette: navy (#264653), teal (#2a9d8f), yellow (#e9c46a), orange (#f4a261), coral (#e76f51)
+   * All colors expressed as HSL values for Tailwind CSS compatibility.
+  */
+  :root {
+    /* Dark theme as default for Coders Library */
+    --background: 193 37% 12%; /* navy-800 */
+    --foreground: 180 25% 94%; /* light text */
+
+    --card: 193 29% 15%; /* navy-700 */
+    --card-foreground: 180 25% 94%;
+
+    --popover: 193 29% 15%;
+    --popover-foreground: 180 25% 94%;
+
+    --primary: 177 70% 41%; /* teal-500 */
+    --primary-foreground: 193 37% 12%;
+
+    --secondary: 193 25% 20%; /* navy-600 */
+    --secondary-foreground: 180 25% 94%;
+
+    --muted: 193 25% 20%;
+    --muted-foreground: 180 10% 70%;
+
+    --accent: 177 70% 41%; /* teal-500 */
+    --accent-foreground: 193 37% 12%;
+
+    --destructive: 9 86% 62%; /* coral-500 */
+    --destructive-foreground: 180 25% 94%;
+
+    --border: 193 25% 25%;
+    --input: 193 25% 20%;
+    --ring: 177 70% 41%;
+
+    --radius: 0.75rem;
+  }
+
+  .light {
+    /* Light theme override if needed */
+    --background: 0 0% 100%;
+    --foreground: 193 37% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 193 37% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 193 37% 12%;
+
+    --primary: 177 70% 41%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 193 15% 95%;
+    --secondary-foreground: 193 37% 12%;
+
+    --muted: 193 15% 95%;
+    --muted-foreground: 193 15% 45%;
+
+    --accent: 177 70% 41%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 9 86% 62%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 193 15% 85%;
+    --input: 193 15% 85%;
+    --ring: 177 70% 41%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-xl border border-border/50;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-teal-400 via-yellow-400 to-orange-400 bg-clip-text text-transparent;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px rgba(42, 157, 143, 0.3);
+    }
+    to {
+      box-shadow: 0 0 30px rgba(42, 157, 143, 0.6);
+    }
+  }
+}
