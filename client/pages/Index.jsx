@@ -121,12 +121,6 @@ const features = [
     link: "/upload",
   },
   {
-    icon: Users,
-    title: "Community",
-    description: "Join discussions, ask questions, and help fellow developers",
-    link: "/community",
-  },
-  {
     icon: TrendingUp,
     title: "Latest Articles",
     description: "Stay updated with trending IT articles and insights",
@@ -183,13 +177,6 @@ export default function Index() {
         description:
           "Upload and preview code examples for better understanding",
         link: "/upload",
-      },
-      {
-        type: "tutorial",
-        name: "Community",
-        description:
-          "Join discussions, ask questions, and help fellow developers",
-        link: "/community",
       },
       {
         type: "tutorial",
@@ -324,12 +311,6 @@ export default function Index() {
               <Button size="lg" className="bg-primary hover:bg-primary/90">
                 <Play className="h-5 w-5 mr-2" />
                 Start Learning
-              </Button>
-            </Link>
-            <Link to="/community">
-              <Button variant="outline" size="lg">
-                <Users className="h-5 w-5 mr-2" />
-                Join Community
               </Button>
             </Link>
           </div>
@@ -680,14 +661,22 @@ export default function Index() {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Community</h3>
+              <h3 className="font-semibold mb-4">Explore</h3>
               <ul className="space-y-2 text-foreground/70">
                 <li>
                   <Link
-                    to="/community"
+                    to="/learn"
                     className="hover:text-primary transition-colors"
                   >
-                    Discussions
+                    Learn
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/tech-stack"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Tech Stack
                   </Link>
                 </li>
                 <li>
@@ -700,18 +689,26 @@ export default function Index() {
                 </li>
                 <li>
                   <Link
-                    to="/jobs"
+                    to="/ai"
                     className="hover:text-primary transition-colors"
                   >
-                    Career Guide
+                    Gen AI
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/help"
+                    to="/jobs"
                     className="hover:text-primary transition-colors"
                   >
-                    Help Center
+                    Jobs
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/upload"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Upload Code
                   </Link>
                 </li>
               </ul>

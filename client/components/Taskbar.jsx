@@ -52,17 +52,6 @@ export default function Taskbar() {
               )}
             </Link>
             <Link
-              to="/community"
-              className={`text-sm font-medium transition-colors hover:text-primary relative ${
-                isActive("/community") ? "text-primary" : "text-foreground/80"
-              }`}
-            >
-              Community
-              {isActive("/community") && (
-                <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full" />
-              )}
-            </Link>
-            <Link
               to="/articles"
               className={`text-sm font-medium transition-colors hover:text-primary relative ${
                 isActive("/articles") ? "text-primary" : "text-foreground/80"
@@ -95,31 +84,18 @@ export default function Taskbar() {
                 <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full" />
               )}
             </Link>
-            <Link
-              to="/companies"
-              className={`text-sm font-medium transition-colors hover:text-primary relative ${
-                isActive("/companies") ? "text-primary" : "text-foreground/80"
-              }`}
-            >
-              Companies
-              {isActive("/companies") && (
-                <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full" />
-              )}
-            </Link>
           </div>
 
           {/* Right Side Buttons */}
           <div className="flex items-center space-x-3">
-            <Button variant="ghost" size="sm" className="text-sm">
-              <Github className="h-4 w-4 mr-2" />
-              Sign In
-            </Button>
-            <Button
-              size="sm"
-              className="bg-primary hover:bg-primary/90 text-sm"
-            >
-              Get Started
-            </Button>
+            <Link to="/learn">
+              <Button
+                size="sm"
+                className="bg-primary hover:bg-primary/90 text-sm"
+              >
+                Get Started
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

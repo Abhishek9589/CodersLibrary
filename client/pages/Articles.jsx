@@ -32,7 +32,7 @@ export default function Articles() {
       url: "https://techcrunch.com/ai-news",
       urlToImage:
         "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=200&fit=crop&crop=center",
-      publishedAt: "2024-12-20T10:30:00Z",
+      publishedAt: "2025-09-22T08:32:17.731Z",
       source: { name: "TechCrunch" },
       author: "Sarah Johnson",
     },
@@ -43,7 +43,7 @@ export default function Articles() {
       url: "https://techcrunch.com/vr-news",
       urlToImage:
         "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&h=200&fit=crop&crop=center",
-      publishedAt: "2024-12-20T08:15:00Z",
+      publishedAt: "2025-09-22T08:32:17.731Z",
       source: { name: "TechCrunch" },
       author: "Mike Chen",
     },
@@ -54,7 +54,7 @@ export default function Articles() {
       url: "https://techcrunch.com/github-news",
       urlToImage:
         "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=200&fit=crop&crop=center",
-      publishedAt: "2024-12-19T16:45:00Z",
+      publishedAt: "2025-09-22T08:32:17.731Z",
       source: { name: "TechCrunch" },
       author: "Alex Rodriguez",
     },
@@ -65,7 +65,7 @@ export default function Articles() {
       url: "https://techcrunch.com/quantum-news",
       urlToImage:
         "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=200&fit=crop&crop=center",
-      publishedAt: "2024-12-19T14:20:00Z",
+      publishedAt: "2025-09-22T08:32:17.731Z",
       source: { name: "TechCrunch" },
       author: "Dr. Lisa Park",
     },
@@ -76,7 +76,7 @@ export default function Articles() {
       url: "https://techcrunch.com/apple-news",
       urlToImage:
         "https://images.unsplash.com/photo-1592659762303-90081d34b277?w=400&h=200&fit=crop&crop=center",
-      publishedAt: "2024-12-19T11:30:00Z",
+      publishedAt: "2025-09-22T08:32:17.731Z",
       source: { name: "TechCrunch" },
       author: "Jennifer Lee",
     },
@@ -87,7 +87,7 @@ export default function Articles() {
       url: "https://techcrunch.com/tesla-news",
       urlToImage:
         "https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=400&h=200&fit=crop&crop=center",
-      publishedAt: "2024-12-18T19:15:00Z",
+      publishedAt: "2025-09-22T08:32:17.731Z",
       source: { name: "TechCrunch" },
       author: "David Kim",
     },

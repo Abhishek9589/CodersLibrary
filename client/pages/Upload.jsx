@@ -140,12 +140,6 @@ export default function Upload() {
                   Upload Code
                 </Link>
                 <Link
-                  to="/community"
-                  className="text-foreground/80 hover:text-primary transition-colors"
-                >
-                  Community
-                </Link>
-                <Link
                   to="/articles"
                   className="text-foreground/80 hover:text-primary transition-colors"
                 >
@@ -154,13 +148,11 @@ export default function Upload() {
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <Button variant="ghost" size="sm">
-                <Github className="h-4 w-4 mr-2" />
-                Sign In
-              </Button>
-              <Button size="sm" className="bg-primary hover:bg-primary/90">
-                Get Started
-              </Button>
+              <Link to="/learn">
+                <Button size="sm" className="bg-primary hover:bg-primary/90">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

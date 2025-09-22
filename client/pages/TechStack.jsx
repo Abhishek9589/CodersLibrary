@@ -1692,12 +1692,6 @@ export default function TechStack() {
                   Start Learning Journey
                 </Button>
               </Link>
-              <Link to="/community">
-                <Button variant="outline" size="lg">
-                  <Globe className="h-5 w-5 mr-2" />
-                  Join Community
-                </Button>
-              </Link>
             </div>
           </div>
         </div>
